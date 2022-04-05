@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Proza+Libre:ital,wght@0,400;0,500;1,400&display=swap');
+
+*{
+    font-family:  'Proza Libre', sans-serif;
+}
+
+a{
+    text-decoration: none;
+    color: aliceblue;
+}
+.father{
+    display: grid;
+    grid-template-columns: 150px 1fr 1fr 150px;
+    grid-template-rows: 100px 20rem 20rem  200px;
+    grid-template-areas: 
+    "nav header header header"
+    "nav sectionA sectionA aside"
+    "nav sectionB sectionB aside"
+    "nav footer footer footer"
+    ;
+}
+
+header{
+    background-color: #b9b9ba;
+    grid-area: header;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+nav{
+    background-color: #7f624e;
+
+    grid-area: nav;
+    padding-top: 150%;
+    line-height: 100px;
+    text-align: center;
+    }
+
+
+.SectionA{
+    background-color: #c4b596;
+    grid-area: sectionA;
+    padding: 20px 30px;
+}
+
+h2{
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.SectionB{
+    background-color: #b69c8b;
+    grid-area: sectionB;
+    padding: 20px 30px;
+}
+
+aside{
+    background-color: #7f624e;
+    grid-area: aside;
+    padding-top: 10%;
+    line-height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.footer{
+    background-color: #eceaeb;
+    grid-area: footer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
